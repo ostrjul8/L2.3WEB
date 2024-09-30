@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Comic Sans MS;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    padding: 10px;
+}
+
+.block {
+    padding: 2vw;
+    background-color: #ffffff;
+    text-align: center;
+    border: 1px solid #333;
+    box-sizing: border-box;
+}
+
+.block-1 {
+    background-color: #78866B;
+    padding: 10px;
+    text-align: left;
+    min-height: 155px;
+    position: relative;
+    width: 100%; 
+    margin-bottom: 10px;
+}
+
+.block-x {
+    position: absolute;
+    top: 50px; 
+    right: 50px; 
+    padding: 10px;
+    max-width: 300px;
+    min-width: 100px;
+    background-color: #78866B;
+    color: #FFD700;
+}
+
+.block-2 {
+    background-color: #3E2723;
+    color: #FFD700;
+    width: calc(25% - 20px); 
+    float: left;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 668px;
+    overflow: auto;
+}
+
+.block-3 {
+    background-color: #3E2723;
+    color: #FFD700;
+    width: calc(100% - 20px - 2*(25% - 20px));
+    float: left;
+    min-height: 100px;
+    padding: 10px;
+    margin: 0 10px;
+    min-height: 100px;
+    overflow: auto;
+}
+
+.block-4 {
+    background-color: #78866B;
+    width: calc(25% - 20px);
+    float: right;
+    padding: 10px;
+    margin-bottom: 10px; 
+    height: calc(668px + 100px + 10px); 
+    overflow: auto;
+}
+
+.block-5 {
+    width: calc(100% - 20px - 2*(25% - 20px)); 
+    padding: 10px;
+    text-align: center;
+    float: left; 
+    margin: 10px 10px;
+    height: 558px;
+}
+
+.block-5 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.block-6 {
+    background-color: #78866B;
+    width: calc((25% - 20px) + 10px + (100% - 20px - 2*(25% - 20px)));
+    min-height: 100px;
+    float: left;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+
+.block-7 {
+    background-color: #78866B;
+    width: 100%;
+    min-height: 155px;
+    padding: 10px;
+    clear: both; 
+    position: relative;
+    text-align: left;
+}
+
+.text-content {
+    padding-bottom: 90px;
+}
+
+.block-y {
+    position: absolute;
+    bottom: 50px; 
+    right: 50px;
+    background-color: #78866B;
+    color: #FFD700;
+    max-width: 300px; 
+    min-width: 100px;
+}
+
+ol, ul {
+    padding-left: 20px;
+    margin: 0 auto;
+    max-width: 80%;
+    text-align: left;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+a {
+    color: #FFD700;
+}
+
+@media screen and (max-width: 768px) {
+    .block-2, .block-3, .block-4, .block-5, .block-6 {
+        width: 100%;
+        float: none;
+        margin: 0 0 10px 0;
+    }
+
+    .block-3 {
+        margin: 10px 0;
+    }
+}
